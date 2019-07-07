@@ -241,7 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f288704b46997cb42b8b8067e8bf3ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacle: []
+  _obstacle:
+  - {fileID: 6539017493577017922, guid: f7ff550eb552c8a4ebd22284b75b3518, type: 3}
+  - {fileID: 3056670247449835103, guid: 16adf6294e717d547a8428b35b47c724, type: 3}
   _spawnStep: 2
   _spawnDistance: 30
   _segmentWidth: {x: -10, y: 10}
