@@ -13,7 +13,7 @@ public class ObstacleSpawner : MonoBehaviour
     private Vector3 _lastPos;
 
     private List<Transform> _spawnedObstacles = new List<Transform>();
-    private List<Transform> spawnedObstacles { get { _spawnedObstacles.RemoveAll(TransformIsNull); return _spawnedObstacles; } }
+    public List<Transform> spawnedObstacles { get { _spawnedObstacles.RemoveAll(TransformIsNull); return _spawnedObstacles; } }
 
     bool TransformIsNull(Transform a)
     {
