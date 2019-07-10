@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 
-public class ObstacleSpawner : MonoBehaviour
+public class ObstacleSpawner : BaseSceneObject
 {
     [SerializeField] private Transform[] _obstacle;
     [SerializeField] private float _spawnStep;
@@ -14,6 +15,9 @@ public class ObstacleSpawner : MonoBehaviour
 
     private List<Transform> _spawnedObstacles = new List<Transform>();
     public List<Transform> spawnedObstacles { get { _spawnedObstacles.RemoveAll(TransformIsNull); return _spawnedObstacles; } }
+
+    public event Action<float> HealthAmountChanged;
+    public event Action<bool> HealthStateChanged;
 
     bool TransformIsNull(Transform a)
     {
@@ -34,13 +38,14 @@ public class ObstacleSpawner : MonoBehaviour
         {
             _lastPos.z += _spawnStep;
 
-            Transform newObstacle = _obstacle[Random.Range(0, _obstacle.Length)];
+            Transform newObstacle = _obstacle[UnityEngine.Random.Range(0, _obstacle.Length)];
 
             _spawnedObstacles.Add(Instantiate(newObstacle, new Vector3(
-                Random.Range(_segmentWidth.x, _segmentWidth.y),
+                UnityEngine.Random.Range(_segmentWidth.x, _segmentWidth.y),
                 0,
                 _lastPos.z + _spawnDistance),
                 Quaternion.identity));
         }
     }
+    
 }

@@ -17,6 +17,11 @@ public class CharController : BaseSceneObject, IDamageable
     public event Action<float> HealthAmountChanged;
     public event Action<bool> HealthStateChanged;
 
+    public float speed {
+        get => _speed;
+        set { _speed = value; }
+    }
+
     protected override void Awake()
     {
         base.Awake();
