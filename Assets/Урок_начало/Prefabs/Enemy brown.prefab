@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6539017493577017922}
   - component: {fileID: 8136468288561714240}
   - component: {fileID: 8857351016904991512}
-  - component: {fileID: 7710418695184633551}
   - component: {fileID: 4032629103390966736}
   m_Layer: 0
   m_Name: Enemy brown
@@ -64,19 +63,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.259901, y: 2.357644, z: 4.0443697}
   m_Center: {x: 0.09811592, y: 0.15763426, z: -0.1671524}
---- !u!114 &7710418695184633551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4895341617520998280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05c0fe2138aec6c4c8ac6e3e556546e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 977136317, guid: 19c8553b5dfb1f146a574daa513943f8, type: 3}
 --- !u!114 &4032629103390966736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,11 +90,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6539017493577017922}
     m_Modifications:
-    - target: {fileID: 6745009143279658901, guid: 7f10ca64f8eab3448b7cba575d708fae,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock21 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6745009143279893429, guid: 7f10ca64f8eab3448b7cba575d708fae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -163,6 +144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745009143279658901, guid: 7f10ca64f8eab3448b7cba575d708fae,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock21 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f10ca64f8eab3448b7cba575d708fae, type: 3}

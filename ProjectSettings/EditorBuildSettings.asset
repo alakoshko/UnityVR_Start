@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/\u0423\u0440\u043E\u043A_\u043D\u0430\u0447\u0430\u043B\u043E/Scenes/Lesson_002.unity"
+    path: "Assets/\u0423\u0440\u043E\u043A_\u043D\u0430\u0447\u0430\u043B\u043E/Scenes/ModeSetup.unity"
+    guid: 9d25c9c0fa27220419a464a35701f3d4
+  - enabled: 1
+    path: "Assets/\u0423\u0440\u043E\u043A_\u043D\u0430\u0447\u0430\u043B\u043E/Scenes/MainMenu.unity"
+    guid: f9ab2a112c77e8f43a4d3f083c7ab6c8
+  - enabled: 1
+    path: "Assets/\u0423\u0440\u043E\u043A_\u043D\u0430\u0447\u0430\u043B\u043E/Scenes/MainMenuVR.unity"
+    guid: cbdd9f09fb98df4409e819f6939f9f6d
+  - enabled: 1
+    path: "Assets/\u0423\u0440\u043E\u043A_\u043D\u0430\u0447\u0430\u043B\u043E/Scenes/Game.unity"
     guid: b1a4288f655a8ec4fb3b73e56cf9ea93
   m_configObjects: {}

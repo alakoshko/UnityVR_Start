@@ -71,6 +71,7 @@ public class CharController : BaseSceneObject, IDamageable
     private float _currentHealth;
     public float CurrentHealth => _currentHealth;
 
+    private GameController _overScript;
 
     public void ApplyDamage(float damage)
     {
@@ -93,6 +94,8 @@ public class CharController : BaseSceneObject, IDamageable
 
 
         Debug.Log("CharCollider: Hit the Enemy");
+
+        _overScript.YouLoose();
         //m_Animator?.Play(_animatorDead);
 
 

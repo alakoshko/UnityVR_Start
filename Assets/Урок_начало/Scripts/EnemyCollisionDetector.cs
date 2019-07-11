@@ -1,20 +1,21 @@
 ﻿
 using UnityEngine;
 
-public class CollisionDetector : MonoBehaviour
+public class EnemyCollisionDetector : MonoBehaviour
 {
     [SerializeField] private CharController _player;
 
+    private GameController _overScript;
 
     //public Transform explosionPrefab;
     void OnCollisionEnter(Collision collision)
     {
         //ContactPoint contact = collision.contacts[0];
 
-        if (collision.gameObject.name == "VR_Player")
+        if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Hit the Enemy: " + collision.gameObject.name + ", with: " + gameObject);
-
+            _overScript.YouLoose();
             _player.ApplyDamage(100);
         }
 
