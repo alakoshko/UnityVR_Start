@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3056670247449835103}
   - component: {fileID: 306437841489116630}
   - component: {fileID: 5116005407563073047}
+  - component: {fileID: 150144541458268067}
+  - component: {fileID: -4960762412170027498}
   m_Layer: 0
   m_Name: Enemy red
   m_TagString: Untagged
@@ -62,6 +64,39 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2162538, y: 4.3858747, z: 1.468648}
   m_Center: {x: 0.06137061, y: 1.5876021, z: -0.04463291}
+--- !u!114 &150144541458268067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157514840253860826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c0fe2138aec6c4c8ac6e3e556546e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 977136317, guid: 19c8553b5dfb1f146a574daa513943f8, type: 3}
+--- !u!114 &-4960762412170027498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157514840253860826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e69d91feb7187e4a80ef7c94daf75f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 20
+  _destroyTime: 10
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  _poolId: Stone
+  _objectCount: 0
+  _explosionVFX: {fileID: 0}
 --- !u!1001 &7302296712733181196
 PrefabInstance:
   m_ObjectHideFlags: 0

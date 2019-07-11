@@ -89,10 +89,10 @@ public class CharController : BaseSceneObject, IDamageable
     {
         Collider.enabled = false;
         var rb = GetComponent<Transform>().gameObject.GetComponent<Rigidbody>();
-        rb.useGravity = true;
-        rb.mass = _maxHealth / 2;
-        rb.AddForce(Vector3.up * UnityEngine.Random.Range(10f, 30f), ForceMode.Impulse);
+        rb.useGravity = false;
 
+
+        Debug.Log("CharCollider: Hit the Enemy");
         //m_Animator?.Play(_animatorDead);
 
 
